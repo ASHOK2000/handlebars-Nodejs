@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Referral Confirmation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      font-size: 14px;
+
+    }
+
+    .email-container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+
+    .content {
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    .content a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .footer img {
+      max-width: 100px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Email if ‘Yes’ to any question – Review needed -->
+     <div class="email-container">
+
+    <div class="content">
+      <p>Hello&nbsp;{{RecipientName}},</p>
+
+      <p>
+        Your answers from the Provide Physiotherapy Self-referral platform
+        below, related to your significant back injury, shows you require a
+        review.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each questions}}
+          <tr>
+            <td>{{question}}</td>
+            <td>{{answer}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <p>
+        We advise you to contact NHS 111 if your back injury happened in the
+        last 6 weeks or book an appointment with a First Contact
+        Physiotherapist (FCP), a service now provided by most GP practices
+        throughout your local area.
+      </p>
+      <p>
+        Please contact your GP surgery to see if you have access to this
+        service and if not, please book an appointment with your GP.
+      </p>
+      <p>
+        Please provide this information to the healthcare professional
+        reviewing you.
+      </p>
+
+      <p>Kind regards,</p>
+      <p>
+        <strong>Smart Referral System</strong>&nbsp;|&nbsp;Provide Online
+        Referral Service
+      </p>
+    </div>
+
+    <div class="footer">
+      <img src="logo.png" alt="Smart Referral System Logo" />
+    </div>
+  </div>
+</body>
+
+</html>

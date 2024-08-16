@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusion Criteria Not Met</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+        <tr>
+            <td>
+                <h1 style="font-size: 20px; margin-bottom: 20px;">Email subject: Inclusion criteria not met for Physiotherapy</h1>
+                <p style="line-height: 1.6;"><strong>Email content:</strong></p>
+                <p style="line-height: 1.6;">{{date}}</p>
+                <p style="line-height: 1.6;">Hello {{name}},</p>
+                <p style="line-height: 1.6;">Your answers from the Provide Physiotherapy Self-referral platform below show that you do not meet the criteria to access the service at present.</p>
+
+                <table role="presentation" width="100%" cellpadding="10" cellspacing="0" border="1" style="border-collapse: collapse; margin-top: 20px; margin-bottom: 20px;">
+                    <tr>
+                        <th style="padding: 10px; text-align: left;">Questions</th>
+                        <th style="padding: 10px; text-align: left;">Answers</th>
+                    </tr>
+                    {{#each answers}}
+                    <tr>
+                        <td style="padding: 10px; text-align: left;">{{question}}</td>
+                        <td style="padding: 10px; text-align: left;">{{answer}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+
+                <p style="font-size: 14px; line-height: 1.6;">We recommend you visit <a href="https://providephysiotherapy.org.uk/" style="color: #0073e6; text-decoration: none;" target="_blank">https://providephysiotherapy.org.uk/</a> for further support including our symptom checker and self-help advice. Also, download the getUBetter app that provides evidence-based digital self-management support for all common musculoskeletal injuries and conditions - <a href="https://www.getubetter.com/getting-started" style="color: #0073e6; text-decoration: none;" target="_blank">https://www.getubetter.com/getting-started</a></p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Alternatively, book an appointment with a First Contact Physiotherapist (FCP), a service now provided by most GP practices throughout your local area, to discuss further management of your musculoskeletal symptoms.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Please contact your GP surgery to see if you have access to this service and if not, please book an appointment with your GP.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Please provide this information to the healthcare professional reviewing you.</p>
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 20px;">
+                    <tr>
+                        <td style="font-size: 14px; font-weight: bold;">
+                            Kind regards,<br>
+                            <strong>Smart Referral System</strong> | Provide Online Referral Service
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="logo.png" alt="Smart Referral System Logo" style="max-width: 100px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
